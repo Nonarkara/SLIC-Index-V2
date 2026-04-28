@@ -16,5 +16,33 @@
   </head>
   <body>
     <div id="root"></div>
+  <!-- Version navigation strip — injected for archive continuity -->
+  <div id="slic-version-nav" style="
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background: #f8f5f0;
+    border-top: 1px solid rgba(28,25,20,0.18);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.55rem 1.5rem;
+    font-family: 'JetBrains Mono', 'Menlo', 'Consolas', ui-monospace, monospace;
+    font-size: 11px;
+    letter-spacing: 0.10em;
+    color: rgba(28,25,20,0.55);
+    gap: 1rem;
+  ">
+    <span style="text-transform: uppercase; letter-spacing: 0.14em;">SLIC INDEX</span>
+    <nav style="display:flex; gap:1.5rem; align-items:center;">
+      <a href="https://nonarkara.github.io/SLIC-Index-V1/" target="_blank" style="color:rgba(28,25,20,0.55); text-decoration:none; text-transform:uppercase; letter-spacing:0.14em;" onmouseover="this.style.color='#1c1914'" onmouseout="this.style.color='rgba(28,25,20,0.55)'">V1 Archive ↗</a>
+      <span style="color:#b85c28; font-weight:600; text-transform:uppercase; letter-spacing:0.14em;">V2 Archive</span>
+      <a href="https://nonarkara.github.io/SLIC-Index/" target="_blank" style="color:rgba(28,25,20,0.55); text-decoration:none; text-transform:uppercase; letter-spacing:0.14em;" onmouseover="this.style.color='#1c1914'" onmouseout="this.style.color='rgba(28,25,20,0.55)'">V3 — Current ↗</a>
+    </nav>
+  </div>
+  <style>#root { padding-bottom: 40px; }</style>
+
   </body>
 </html>
