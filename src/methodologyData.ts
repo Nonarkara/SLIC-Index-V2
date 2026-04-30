@@ -1,3 +1,4 @@
+import { asset } from "./assetPath";
 import type { Locale, MethodologyData, MethodologyReference, SourceTier, WorksheetColumn } from "./types";
 
 const methodologyReferences: MethodologyReference[] = [
@@ -513,19 +514,19 @@ const methodologyContent: Record<Locale, MethodologyData> = {
       figures: [
         {
           id: "process-stage",
-          src: "/photos/report-people-stage.jpg",
+          src: asset("photos/report-people-stage.jpg"),
           alt: "People on stage during a public city event.",
           caption: "The framework had to survive public presentation, not just private drafting.",
         },
         {
           id: "process-meeting",
-          src: "/photos/report-people-meeting.jpg",
+          src: asset("photos/report-people-meeting.jpg"),
           alt: "Participants meeting around a table with laptops and microphones.",
           caption: "Assumptions were tested in working meetings where data choices and city logic had to be defended.",
         },
         {
           id: "process-workshop",
-          src: "/photos/report-people-workshop.jpg",
+          src: asset("photos/report-people-workshop.jpg"),
           alt: "A workshop with a speaker presenting to a seated audience.",
           caption: "Pilot discussions helped separate good-looking indicators from indicators that actually explain urban life.",
         },
@@ -1043,19 +1044,19 @@ const methodologyContent: Record<Locale, MethodologyData> = {
       figures: [
         {
           id: "process-stage-th",
-          src: "/photos/report-people-stage.jpg",
+          src: asset("photos/report-people-stage.jpg"),
           alt: "ผู้คนบนเวทีงานสาธารณะด้านเมือง",
           caption: "กรอบนี้ต้องอธิบายต่อสาธารณะให้รอด ไม่ใช่แค่สวยในเอกสารภายใน",
         },
         {
           id: "process-meeting-th",
-          src: "/photos/report-people-meeting.jpg",
+          src: asset("photos/report-people-meeting.jpg"),
           alt: "การประชุมรอบโต๊ะพร้อมคอมพิวเตอร์และไมโครโฟน",
           caption: "สมมติฐานถูกตรวจในห้องทำงานที่ต้องป้องกันเหตุผลด้านข้อมูลและเหตุผลด้านเมืองพร้อมกัน",
         },
         {
           id: "process-workshop-th",
-          src: "/photos/report-people-workshop.jpg",
+          src: asset("photos/report-people-workshop.jpg"),
           alt: "เวิร์กช็อปที่มีผู้บรรยายต่อหน้าผู้เข้าร่วม",
           caption: "การทดลองใช้ช่วยแยกตัวชี้วัดที่ดูดีออกจากตัวชี้วัดที่อธิบายชีวิตเมืองได้จริง",
         },
@@ -1536,19 +1537,19 @@ const methodologyContent: Record<Locale, MethodologyData> = {
       figures: [
         {
           id: "process-stage-zh",
-          src: "/photos/report-people-stage.jpg",
+          src: asset("photos/report-people-stage.jpg"),
           alt: "城市议题公开活动中的舞台场景。",
           caption: "这套框架必须经得起公开说明，而不只是内部自洽。",
         },
         {
           id: "process-meeting-zh",
-          src: "/photos/report-people-meeting.jpg",
+          src: asset("photos/report-people-meeting.jpg"),
           alt: "围桌会议场景，桌上有电脑与麦克风。",
           caption: "假设在真实工作会议中被检验，数据选择与城市逻辑都要能被说明。",
         },
         {
           id: "process-workshop-zh",
-          src: "/photos/report-people-workshop.jpg",
+          src: asset("photos/report-people-workshop.jpg"),
           alt: "讲者面对听众进行工作坊说明。",
           caption: "试点讨论帮助我们把“看起来漂亮”的指标与真正解释城市生活的指标区分开来。",
         },

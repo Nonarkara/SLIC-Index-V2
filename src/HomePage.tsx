@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
+import { asset } from "./assetPath";
 import ZeroSumAllocator from "./ZeroSumAllocator";
 import type { PillarAllocation } from "./ZeroSumAllocator";
 import { evaluateConsequences } from "./consequenceRules";
@@ -260,11 +261,11 @@ const homeEditorialCopy: Record<
 /* ───── launch section copy ───── */
 
 const LAUNCH_PHOTOS = {
-  hero: "/launch-photos/20260318145941_DSC09480.jpg",
-  stage: "/launch-photos/20260318145249_ABC01948.jpg",
-  slide: "/launch-photos/20260318145319_DSC09441.jpg",
-  laptop: "/launch-photos/20260317094731-_DON7077.jpg",
-  networking: "/launch-photos/20260318151147_DSC09510.jpg",
+  hero: asset("launch-photos/20260318145941_DSC09480.jpg"),
+  stage: asset("launch-photos/20260318145249_ABC01948.jpg"),
+  slide: asset("launch-photos/20260318145319_DSC09441.jpg"),
+  laptop: asset("launch-photos/20260317094731-_DON7077.jpg"),
+  networking: asset("launch-photos/20260318151147_DSC09510.jpg"),
 };
 
 const launchCopy: Record<Locale, {
