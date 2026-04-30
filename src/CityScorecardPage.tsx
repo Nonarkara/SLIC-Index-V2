@@ -45,12 +45,6 @@ interface PublishedCity {
   creativeCoverage: number;
 }
 
-interface NormStat {
-  p05: number | null;
-  p95: number | null;
-  dir: "positive" | "negative";
-}
-
 interface PillarMetricEntry {
   key: string;
   weight: number;
@@ -117,7 +111,6 @@ const DATA_LEVEL_LABELS: Record<string, string> = {
 
 /* ── Helpers ── */
 
-const normStats = (publishedData as any).normStats as Record<string, NormStat>;
 const pillarMetrics = (publishedData as any).pillarMetrics as Record<string, PillarMetricEntry[]>;
 const allCities = (publishedData.cities ?? []) as PublishedCity[];
 
